@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-dark: #1a1a1a;
+    --brand-red: #C83D32;
+    --brand-light-bg: #F2F0EB;
+    --brand-dark-card: #111;
+    --brand-border-dark: #333;
+    --selection-red: #dc2626;
+    --brand-white: #ffffff;
+    --brand-black: #000000;
+  }
+
+  ::selection {
+    background-color: #dc2626;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .shadow-card {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .spiral-divider {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='80' viewBox='0 0 40 80'%3E%3Cellipse cx='20' cy='40' rx='9' ry='30' fill='%23000000' stroke='%23666666' stroke-width='4' /%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
+  .spiral-divider-light {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='80' viewBox='0 0 40 80'%3E%3Cellipse cx='20' cy='40' rx='9' ry='30' fill='%23000000' stroke='%23555555' stroke-width='4' /%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
+  .stardust-bg {
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  }
+
+  .concrete-bg {
+    background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+  }
+
+  .cardboard-bg {
+    background-image: url('https://www.transparenttextures.com/patterns/cardboard.png');
+  }
+
+  .noise-overlay {
+    background-image: url('https://www.transparenttextures.com/patterns/noise-lines.png');
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
